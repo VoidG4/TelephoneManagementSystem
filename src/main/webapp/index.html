@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CallManage login</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/logo_icon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="login">
+    <img src="images/logo_app.png" width="200" alt="logo" class="image">
+    <div class="container">
+        <h2>Welcome back!</h2>
+        
+        <form action="login" method="post">
+            <div class="input-container">
+                <img class="icon" src="images/user.png" alt="Username Icon">
+                <input type="text" name="loginusername" placeholder="Username" required>
+            </div>
+            
+            <div class="input-container">
+                <img class="icon" src="images/password.png" alt="Password Icon">
+                <input type="password" name="loginpassword" placeholder="Password" required>
+            </div>
+            
+            <select class="input-container" name="loginproperty">
+	            <option value="Administrator">Administrator</option>
+	            <option value="Seller">Seller</option>
+	            <option value="Client">Client</option>
+        	</select>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <a href="signup.html">Sign Up</a>
+</div>
+
+</body>
+</html>
